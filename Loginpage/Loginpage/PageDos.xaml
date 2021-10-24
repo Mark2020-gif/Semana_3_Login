@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Loginpage.PageDos">
+    <ContentPage.Content>
+
+        <!--<WebView Source="https://www.google.com"/> -->
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Ingrese un valor" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+            <Entry x:Name="txtValorUno" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="Ingrese otro valor" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="El resultado es" TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+            <Entry x:Name="txtResultado" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+            <Button x:Name="btnSumar" Text="Sumar" TextColor="White" Grid.Row="4" Grid.Column="1" BackgroundColor="#0080FF" Clicked="btnSumar_Clicked" />
+            
+            <Label Text="Conectado: estudiante2021" TextColor="Black" Grid.Row="4" Grid.Column="0"/>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
